@@ -2,10 +2,9 @@
 
 <script type="text/javascript">
 	
-	
-	
-
-	
+	jQuery(document).ready(function($) {
+		//jQuery('.tabs ul.links li:eq(2) a').trigger('click');
+	});
 	
 </script>
 <div id="main">

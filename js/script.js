@@ -14,6 +14,7 @@ jQuery('.butons-control-select .go').live('click', function(){
 	var selected1 = jQuery('.start-select.dados-start option:selected');
 	jQuery('.start-select.dados-start option:selected').remove();
 	jQuery('.end-select.dados-start').append(selected1);
+	return false;
 });
 
 
@@ -21,6 +22,7 @@ jQuery('.butons-control-select .back').live('click', function(){
 	var selected2 = jQuery('.end-select.dados-start option:selected');
 	jQuery('.end-select.dados-start option:selected').remove();
 	jQuery('.start-select.dados-start').append(selected2);
+	return false;
 });
 
 
@@ -60,16 +62,20 @@ jQuery('.valores2 tr .remove-btn').live('click', function(){
 jQuery('#valorNao').live('change',function(){
 	if(jQuery(this).is(':checked')){
 		jQuery('#valorSim').prop('disabled',true);
+		jQuery('.valores tr input').prop('disabled', true);
 	}else{
 		jQuery('#valorSim').prop('disabled',false);
+		jQuery('.valores tr input').prop('disabled', false);
 	}
 });
 
 jQuery('#valorSim').live('change',function(){
 	if(jQuery(this).is(':checked')){
 		jQuery('#valorNao').prop('disabled',true);
+		jQuery('.valores tr input').prop('disabled', true);
 	}else{
 		jQuery('#valorNao').prop('disabled',false);
+		jQuery('.valores tr input').prop('disabled', false);
 	}
 });
 
@@ -81,7 +87,27 @@ jQuery('select#nota').live('change', function(){
 		jQuery('table.nota-bovespa').hide();
 		jQuery('table.nota-bmf').show();
 	}
-})
+});
 
+
+jQuery('table td input').live({
+	focusout: function(){
+		jQuery(this).parent().css('background','#FFF');
+	},
+	focus: function(){
+		jQuery(this).parent().css('background','#F9F9F9');
+	}
+});
+
+
+var trNota = '<tr><td>	<select id="" name="">		<option value="1">tipo 1</option>	<option value="2">tipo 2</option>	</select></td><td><select id="" name=""><option value="1">corretota 1</option>	<option value="2">corretora 2</option>	</select></td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td>	<td class="btn-table"><button class="add">+</button><button class="less">-</button></td></tr>';
+jQuery('.notaT1 .btn-table .add').live('click', function(){
+jQuery(this).closest('tr').after(trNota);
+});
+
+jQuery('.notaT1 .btn-table .less').live('click', function(){
+jQuery(this).closest('tr').remove();
+
+});
 
 });

@@ -35,7 +35,7 @@
 
 	<div class="content-search nota-search">
 		<label for="n-nota">Número da nota</label><br/>
-		<input style="width:135px;" type="text" placeholder="Numero da nota"/>
+		<input style="width:180px;" type="text" placeholder="Numero da nota"/>
 	</div>
 	
 	<div class="content-search pregao-search">
@@ -56,7 +56,14 @@
 
 
 <table border="0" width="960"class="notaT1">
-	
+	           <col style="width: 7%;"/>
+        <col style="width: 10%;"/>
+        <col style="width: 10%;"/>
+        <col style="width: 10%"/>
+        <col style="width: 10%"/>
+        <col style="width: 10%"/>
+        <col style="width: 10%"/>
+        <col style="width: 10%"/>
 <thead>
 	<th><span>C/V</span> </th>
 	<th><span>Tipo de mercado</span> </th>
@@ -81,11 +88,11 @@
 				<option value="1">corretota 1</option>
 				<option value="2">corretora 2</option>
 			</select></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
 		<td class="btn-table"><button class="add">+</button><button class="less">-</button></td>
 	</tr>
 	<tr>
@@ -97,11 +104,11 @@
 				<option value="1">corretora 1</option>
 				<option value="2">corretora 2</option>
 			</select></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
+		<td><input type="text"/> </td>
 		<td class="btn-table"><button class="add">+</button><button class="less">-</button></td>
 	</tr>
 	<tr>
@@ -113,11 +120,11 @@
 				<option value="1">corretora 1</option>
 				<option value="2">corretora 2</option>
 			</select></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+        <td><input type="text"/> </td>
+        <td><input type="text"/> </td>
+        <td><input type="text"/> </td>
+        <td><input type="text"/> </td>
+        <td><input type="text"/> </td>
 		<td class="btn-table"><button class="add">+</button><button class="less">-</button></td>
 	</tr>
 

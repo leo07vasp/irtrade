@@ -67,7 +67,7 @@ button{cursor: pointer;}
 
 
 body{background: url("img/body-bg.png") repeat-x top center;}
-#main{    margin: 0 auto 90px; min-height: 400px; padding: 10px 21px 30px; width: 960px;}
+#main{    margin: 0 auto 40px; min-height: 400px; padding: 10px 21px 30px; width: 960px;}
 #main .main-content{padding-top: 20px;}
 button.salvar{white-space: nowrap; overflow: hidden; text-indent: 100%; display: block; background: url('img/sprt.png') no-repeat -721px -77px; width: 105px; height: 42px; border:none; cursor: pointer;}
 .insert-btn{white-space: nowrap; text-indent: 100%; overflow: hidden; border:0px; background: url('img/sprt.png') no-repeat -848px -77px; width: 55px; height: 27px; cursor: pointer;	margin-left: 4px;}
@@ -165,13 +165,13 @@ table.valores2 tbody td.btn-table{border:none; background: none;}
 
 /*inserir nota*/
 #main.insert-nota{}
-span.number{color: #FFFFFF; float: left; font-family: "DIN-Bold"; font-size: 16px; font-weight: normal; height: 21px; padding-left: 1px; text-align: center; width: 22px; border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; background:#1892b2;}
+span.number{    background: url("img/sprt.png") no-repeat scroll -983px -142px transparent; color: #FFFFFF; float: left; font-family: "DIN-Bold"; font-size: 16px; font-weight: normal; height: 21px; padding-left: 1px; padding-top: 3px; text-align: center; width: 22px;}
 .step h2{margin-left: 10px; font-family: "DIN-Bold"; font-size: 16px; color: #0191B2; font-weight: normal; float: left; margin-right: 20px; margin-top: 2px;}
 .step{height: 30px; padding: 20px; margin-left: -30px;}
 .step1{ background: #E0F1E9; margin-top: 30px; margin-bottom: 15px;}
 .step1 select{float: left; margin: 3px;}
 .step3 {background: #E0F1E9; margin-top: 20px;}
-.step3 span.number{}
+.step3 span.number{padding-top: 2px !important;}
 .step3 div.message{float: left; padding: 8px 20px; font-family: "DIN-Medium"; font-size: 13px; color: #FFF; margin-top: -3px; border-radius:5px; -o-border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
 .step3 div.message.calculando{background: #1CB78D;}
 .step3 div.message.erro{background: #BE1E2D;}
@@ -451,6 +451,6 @@ text-decoration: underline;
 
 
 /*Inicio do footer*/
-#footer{width: 100%; margin: 0 auto; height: 100px; background: url("img/footer-bg.png") repeat-x; clear: both; position:fixed; bottom:0px;}
+#footer{width: 100%; margin: 0 auto; height: 100px; background: url("img/footer-bg.png") repeat-x; clear: both;}
 #footer p{font-family: "DIN-Regular"; font-size: 10px; color: #6D6E71; display: block; margin: 0 auto; text-align: center; position: relative; top: 50px;}
 /*Fim do footer*/

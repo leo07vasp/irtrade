@@ -42,8 +42,8 @@ jQuery(document).ready(function($) {
 			<li><a href="/nota.php">Inserir Nota</a> </li>
 			<li><a href="/notas-pendentes.php">Notas Pendentes</a> </li>
 			<li><a href="/eventos.php">Eventos Coorporativos</a> </li>
-			<li><a href="">Notas Salvas</a> </li>
-			<li><a href="">Manutençåo de Carteira</a> </li>
+			<li><a href="/notas-salvas.php">Notas Salvas</a> </li>
+			<li><a href="/manutencao-carteira.php">Manutençåo de Carteira</a> </li>
 		</ul>	
 	</li>
 	

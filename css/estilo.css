@@ -9,7 +9,8 @@ input:focus{background: #F9F9F9;}
 label{color: #58595B; font-family: "SegoeUI-Light"; font-size: 11px; text-transform: capitalize;}
 button{cursor: pointer;}
 select{padding: 2px;}
-table tbody tr td select{background: none; border:none;}
+table tbody tr td select{background: none; border:none; width: 95%;}
+table tbody tr td input.valor{border:1px solid #b4b6b8; background: #f7f8f8; text-align: right; color: #58595B;}
 /**/
 
 /*Fontes*/
@@ -64,9 +65,11 @@ table tbody tr td select{background: none; border:none;}
 .data-table tbody tr td.valor {width: 150px; }
 .data-table tbody tr td.valor input{width: 130px; margin: 0 auto; border:1px solid #b4b6b8; background: #f7f8f8; text-align: right; color: #58595B;}
 .data-table tbody tr td.sigla {text-align: center;}
+.data-table tbody tr td.center-text{text-align: center;}
 .data-table tbody tr td#TotalSomaBovespa input{}
 .data-table tbody tr td input{border:1px solid #b4b6b8; background: #f7f8f8; text-align: right; color: #58595B;}
-
+table.data-zebrada tr:nth-child(2n+2) {background-color: #EFF7FD;}
+table.data-hover tr:hover{background-color: #DBECF7 ;}
 
 
 body{background: url("img/body-bg.png") repeat-x top center;}
@@ -79,6 +82,11 @@ hr.blue-sep{border-color: #00A0C6;}
 button.enviar{white-space: nowrap; overflow: hidden; text-indent: 100%; cursor: pointer; display: block; 	background: url('img/sprt.png') no-repeat -853px -134px; width: 105px; height: 41px; border:none;}
 p.text-apresentcao{font-size: 11px; color: #58595B; font-family: "SegoeUI-Light";}
 button.big-buscar{white-space: nowrap; text-indent: 100%; overflow: hidden; background: url('img/sprt.png') no-repeat -901px -297px;	width: 105px; height: 39px; border:0px;}
+button.zerar{	background: url('img/sprt.png') no-repeat -897px -392px; width: 26px; height: 27px; white-space: nowrap; text-indent: 100%; overflow: hidden; border:0px;}
+button.transfer{	background: url('img/sprt.png') no-repeat -980px -391px; width: 26px; height: 27px; white-space: nowrap; text-indent: 100%; overflow: hidden; border:0px;}
+button.incorporar{white-space: nowrap; text-indent: 100%; overflow: hidden; background: url('img/sprt.png') no-repeat -939px -392px; width: 26px; height: 26px; border:0px;}
+
+
 
 .tabs ul.links{float: left; width: 100%; position: relative; top: 1px;}
 .tabs ul.links li{float: left; padding: 12px 10px 0; text-align: center; border:1px solid #a8d2ec; border-top:2px solid #a8d2ec; background: url("img/bg-tab.png") repeat-x; height: 24px; -webkit-border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; border-top-left-radius: 8px; border-top-right-radius: 8px; }
@@ -90,7 +98,7 @@ button.big-buscar{white-space: nowrap; text-indent: 100%; overflow: hidden; back
 .tabs .conteudos > div p.tab-description{font-family: "SegoeUI-Light"; font-size: 11px; color: #58595B;}
 
 .title-content-default{  display: block; height: 40px; width: 100%;}
-.title-content-default h1{    background: none repeat scroll 0 0 #00A0C6; border-radius: 8px 8px 8px 8px; color: #FFFFFF; float: left; font-family: "SegoeUI-Light"; font-size: 13px; font-weight: normal; padding: 10px 20px 7px; text-transform: uppercase;}
+.title-content-default h1{    background: none repeat scroll 0 0 #00A0C6; border-radius: 8px 8px 8px 8px; color: #FFFFFF; float: left; font-family: "SegoeUI-Light"; font-size: 13px; font-weight: normal; padding: 5px 20px 7px; text-transform: uppercase;}
 .title-content-default span.desc{float: left; font-family: "SegoeUI"; font-size: 11px; color: #6D6E71; padding: 5px 0 0 20px; width: 700px;}
 
 /*Dados iniciais*/
@@ -255,6 +263,14 @@ td.btn-table .less{border:none; 	background: url('img/sprt.png') no-repeat -966p
 
 
 /*Manutencao da carteira*/
+
+#main.manutencao-carteira{}
+#main.manutencao-carteira .blue-sep{margin: 20px 0;}
+#main.manutencao-carteira h2{font-size: 11px; color: #58595B; font-family: "SegoeUI"; text-transform: uppercase;}
+#main.manutencao-carteira p{font-size: 11px; color: #6D6E71; font-family: "SegoeUI"; display: block; margin: 5px 0px 20px 0;}
+
+
+/* fim Manutencao da carteira*/
 
 /*Inicio*/
 

@@ -55,7 +55,7 @@
 </div>			
 
 
-<table border="0" width="960"class="notaT1">
+<table border="0" width="960"class="notaT1 com-hover-input">
 	           <col style="width: 7%;"/>
         <col style="width: 10%;"/>
         <col style="width: 10%;"/>

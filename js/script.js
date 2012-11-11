@@ -33,6 +33,7 @@ jQuery('.custodia tr .insert-btn').live('click', function(){
 	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
 	jQuery(tr).find('input').prop('disabled', true);
 	jQuery('.custodias tbody').append(tr);
+	return false;
 });
 
 jQuery('.custodias tr .remove-btn').live('click', function(){
@@ -40,6 +41,8 @@ jQuery('.custodias tr .remove-btn').live('click', function(){
 	if(jQuery('.custodias tbody tr').length <= 0){
 		jQuery('.custodias').hide();
 	}
+	return false;
+
 });
 
 jQuery('.valores tr .insert-btn').live('click', function(){
@@ -49,6 +52,8 @@ jQuery('.valores tr .insert-btn').live('click', function(){
 	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
 	jQuery(tr).find('input').prop('disabled', true);
 	jQuery('.valores2 tbody').append(tr);
+	return false;
+
 });
 
 jQuery('.valores2 tr .remove-btn').live('click', function(){
@@ -56,6 +61,7 @@ jQuery('.valores2 tr .remove-btn').live('click', function(){
 		if(jQuery('.valores2 tbody tr').length <= 0){
 	jQuery('.valores2').hide();
 	}
+	return false;
 });
 
 
@@ -90,7 +96,7 @@ jQuery('select#nota').live('change', function(){
 });
 
 
-jQuery('table td input').live({
+jQuery('table.com-hover-input td input').live({
 	focusout: function(){
 		jQuery(this).parent().css('background','#FFF');
 	},
@@ -101,13 +107,13 @@ jQuery('table td input').live({
 
 
 var trNota = '<tr><td>	<select id="" name="">		<option value="1">tipo 1</option>	<option value="2">tipo 2</option>	</select></td><td><select id="" name=""><option value="1">corretota 1</option>	<option value="2">corretora 2</option>	</select></td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td>	<td class="btn-table"><button class="add">+</button><button class="less">-</button></td></tr>';
+
 jQuery('.notaT1 .btn-table .add').live('click', function(){
-jQuery(this).closest('tr').after(trNota);
+	jQuery(this).closest('tr').after(trNota);
 });
 
 jQuery('.notaT1 .btn-table .less').live('click', function(){
-jQuery(this).closest('tr').remove();
-
+	jQuery(this).closest('tr').remove();
 });
 
 });

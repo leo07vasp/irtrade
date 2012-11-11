@@ -61,7 +61,7 @@
 			Para que o sistema possa calcular corretamente as suas operações a partir desta data, você deve, caso esteja posicionado no mercado financeiro, 
 			incluir a carteira atual através dos campos abaixo. Se você possuir ações de mais de uma empresa, clique no botão "+" à direita para abrir novos campos. </p>
 <div class="insert-table">
-			<table class="custodia" cellspacing="0" cellpadding="0" width="860">
+			<table class="custodia com-hover-input" cellspacing="0" cellpadding="0" width="860">
 				<thead>
 							<th>Corretora</th>
 					<th>Data</th>
@@ -169,7 +169,7 @@
 </p>	
 
 
-<table class="valores" cellspacing="0" cellpadding="0" width="860">
+<table class="valores com-hover-input " cellspacing="0" cellpadding="0" width="860">
 <thead>
 	<th>Ano</th>
 	<th>Prejuízo Acumulado a Compensar (Comum)</th>

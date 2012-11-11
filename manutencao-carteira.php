@@ -247,6 +247,47 @@ pharetra, nunc et malesuada consequat, neque sapien posuere dui</p>
 
 </table>
 
+<div id="manutencao-carteira-d">
+	
+<h3>Venda(s) para especificar liquidação</h3>
+
+
+<table class="data-table" width="600">
+	<col style="10%"/>
+	<col style="60%"/>
+	<col style="20%"/>
+	<thead>
+		<th>Data</th>
+		<th>Ativo</th>
+		<th>Quantidade</th>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+
+</table>
+
+
+</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		 $( "#manutencao-carteira-d" ).dialog({
+            autoOpen: true,
+            modal: true,
+            title: 'Liquida Termo',
+            width: 800
+        });
+	});
+	
+</script>
+
+
 
 </div>
 <?php include 'footer.php'; ?>

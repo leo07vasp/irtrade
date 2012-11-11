@@ -5,6 +5,8 @@
 	<title>IR TRADE</title>
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+	<link rel="stylesheet" href="css/ui-trade/jquery-ui-1.9.1.custom.min.css"/>
 	<link rel="stylesheet" href="css/estilo.css"/>
 </head>
 

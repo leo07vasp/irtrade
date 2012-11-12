@@ -116,4 +116,27 @@ jQuery('.notaT1 .btn-table .less').live('click', function(){
 	jQuery(this).closest('tr').remove();
 });
 
+jQuery(".table-termo input.valor, .table-avista input.valor, .table-btc input.valor").live({
+	blur: function(){
+		var indexdeselecao1 = jQuery(this).closest('tr').index();
+		valorStartFixed = parseInt(jQuery('.table-liquidar tr:eq('+(indexdeselecao1+1)+') input.valor').val());
+	},
+	focusout : function(){
+		var indexdeselecao = jQuery(this).closest('tr').index();
+		var numeroDigitado = parseInt(jQuery(this).val());
+		var valorStart = parseInt(jQuery('.table-liquidar tr:eq('+(indexdeselecao+1)+') input.valor').val());
+		var valorFinal = (valorStart-numeroDigitado);
+		if(valorFinal < 0){
+			console.log(' conta impossivel');
+		}else if(isNaN(valorFinal)){
+			jQuery('.table-liquidar tr:eq('+(indexdeselecao+1)+') input.valor').val(jQuery('.table-liquidar tr:eq('+(indexdeselecao+1)+') input.valor').attr('valorStartAttr'));
+		}
+		else{
+			jQuery('.table-liquidar tr:eq('+(indexdeselecao+1)+') input.valor').val(valorFinal);
+		}
+	}
+});
+	
+
+
 });

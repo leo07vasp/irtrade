@@ -252,10 +252,11 @@ pharetra, nunc et malesuada consequat, neque sapien posuere dui</p>
 <h3>Venda(s) para especificar liquidação</h3>
 
 
-<table class="data-table" width="600">
-	<col style="10%"/>
-	<col style="60%"/>
-	<col style="20%"/>
+<table class="table-liquidar data-table data-zebrada data-hover" width="720">
+			<col style="width: 10%;"/>
+		<col style="width: 70%;"/>
+		<col style="width: 20%"/>
+		
 	<thead>
 		<th>Data</th>
 		<th>Ativo</th>
@@ -266,12 +267,134 @@ pharetra, nunc et malesuada consequat, neque sapien posuere dui</p>
 		<tr>
 			<td></td>
 			<td></td>
-			<td></td>
+			<td><input disabled="disabled" type="text" valorStartAttr="400" value="400" class="valor"> </td>
 		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input disabled="disabled" type="text" valorStartAttr="800" value="800" class="valor"> </td>
+		</tr>	
+
+
 	</tbody>
 
 </table>
 
+
+<hr style="margin:20px 0;" class="blue-sep"/>
+
+<h3>termo</h3>
+<table width="720" class="table-termo data-table data-hover data-zebrada">
+			<col style="width: 10%;"/>
+		<col style="width: 40%;"/>
+		<col style="width: 15%"/>
+		<col style="width: 15%"/>
+		<col style="width: 10%"/>
+	<thead>
+		<th>Data</th>
+		<th>Ativo</th>
+		<th>Vencimento</th>
+		<th>Quantidade</th>
+		<th>Qtd. Liquidar</th>
+	</thead>
+
+	<tbody>
+		<tr>	
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input type="text" class="valor"/> </td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input type="text" class="valor"/> </td>
+		</tr>
+
+
+	</tbody>
+
+</table>
+
+
+
+
+<h3>vista</h3>
+<table width="720" class="table-avista data-table data-hover data-zebrada">
+			<col style="width: 10%;"/>
+		<col style="width: 40%;"/>
+		<col style="width: 15%"/>
+		<col style="width: 15%"/>
+		<col style="width: 10%"/>
+	<thead>
+		<th>Data</th>
+		<th>Ativo</th>
+		<th>Vencimento</th>
+		<th>Quantidade</th>
+		<th>Qtd. Liquidar</th>
+	</thead>
+
+	<tbody>
+		<tr>	
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input type="text" class="valor"/> </td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input type="text" class="valor"/> </td>
+		</tr>
+
+	</tbody>
+
+</table>
+
+
+
+<h3>abrir btc</h3>
+
+<table class="table-btc data-table data-zebrada data-hover" width="720">
+			<col style="width: 10%;"/>
+		<col style="width: 70%;"/>
+		<col style="width: 20%"/>
+		
+	<thead>
+		<th>Data</th>
+		<th>Ativo</th>
+		<th>Quantidade</th>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input type="text" class="valor"> </td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input type="text" class="valor"> </td>
+		</tr>	
+
+
+	</tbody>
+
+</table>
+
+<button class="salvar">salvar</button>
+<button class="cancelar">cancelar</button>
 
 </div>
 
@@ -280,8 +403,8 @@ pharetra, nunc et malesuada consequat, neque sapien posuere dui</p>
 		 $( "#manutencao-carteira-d" ).dialog({
             autoOpen: true,
             modal: true,
-            title: 'Liquida Termo',
-            width: 800
+            title: 'Liquidação termo',
+            width: 755
         });
 	});
 	

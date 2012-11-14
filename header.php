@@ -6,6 +6,7 @@
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+	<script src="js/jquery.maskMoney.js"></script>
 	<link rel="stylesheet" href="css/ui-trade/jquery-ui-1.9.1.custom.min.css"/>
 	<link rel="stylesheet" href="css/estilo.css"/>
 </head>
@@ -21,6 +22,9 @@ jQuery(document).ready(function($) {
 		}
 
 	});
+	
+	
+	jQuery("input.valorFormat").maskMoney({symbol:'R$ ', showSymbol:true, thousands:'.', decimal:',', symbolStay: true});
 });
 
 </script>
@@ -53,7 +57,7 @@ jQuery(document).ready(function($) {
 
 	<li class="relatoriosC"><a href="#">relatorios contabéis</a>
 			<ul class="subs">
-				<li><a href="">teste</a> </li>
+				<li><a href="/custodia-atual.php">Custódia atual</a> </li>
 				<li><a href="">teste</a> </li>
 				<li><a href="">teste</a> </li>
 				<li><a href="">teste</a> </li>

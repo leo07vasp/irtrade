@@ -22,9 +22,9 @@ Estarão disponíveis para busca apenas notas de corretagem processadas no siste
 		</label>
 		<label>
 			<span>Período</span>
-			<input type="text" name="periodo" id="Periodo" class="f-left" style="width:66px;" />
+			<input type="text" name="periodo" id="Periodo" class="f-left" style="width:55px;" />
 			<span>a</span>
-			<input type="text" name="periodo2" id="Periodo2" class="f-left" style="width:65px;" />
+			<input type="text" name="periodo2" id="Periodo2" class="f-left" style="width:55px; margin-left:13px;" />
 			<br style="clear:both;" />
 		</label>
 		<label>

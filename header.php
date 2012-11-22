@@ -58,9 +58,9 @@ jQuery(document).ready(function($) {
 	<li class="relatoriosC"><a href="#">relatorios contabéis</a>
 			<ul class="subs">
 				<li><a href="/custodia-atual.php">Custódia atual</a> </li>
-				<li><a href="">teste</a> </li>
-				<li><a href="">teste</a> </li>
-				<li><a href="">teste</a> </li>
+				<li><a href="/sintetico-bovespa.php">Sintético Bovespa</a> </li>
+				<li><a href="/sintetico-bmf.php">Sintético BMF</a> </li>
+				<li><a href="/historico-ativo.php">Histórico Ativo</a> </li>
 
 			</ul>	
 	</li>
@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
 
 	<li class="relatoriosD"><a href="#">relátorios de declaração</a>
 		<ul class="subs">
-			<li><a href="">teste</a> </li>
+			<li><a href="/rendimentos-isento.php">Rendimentos Isentos</a> </li>
 			<li><a href="">teste</a> </li>
 			<li><a href="">teste</a> </li>
 			<li><a href="">teste</a> </li>

@@ -71,9 +71,10 @@ jQuery(document).ready(function($) {
 	<li class="relatoriosD"><a href="#">relátorios de declaração</a>
 		<ul class="subs">
 			<li><a href="/rendimentos-isento.php">Rendimentos Isentos</a> </li>
-			<li><a href="">teste</a> </li>
-			<li><a href="">teste</a> </li>
-			<li><a href="">teste</a> </li>
+			<li><a href="">Renda Variável (Comuns | DayTrade)</a> </li>
+			<li><a href="">Fundos Imobiliários</a> </li>
+			<li><a href="">IRRF Fonte</a> </li>
+			<li><a href="">Kit Declaração</a> </li>
 		</ul>	
 	</li>
 	

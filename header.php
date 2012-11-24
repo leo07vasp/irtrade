@@ -71,10 +71,10 @@ jQuery(document).ready(function($) {
 	<li class="relatoriosD"><a href="#">relátorios de declaração</a>
 		<ul class="subs">
 			<li><a href="/rendimentos-isento.php">Rendimentos Isentos</a> </li>
-			<li><a href="">Renda Variável (Comuns | DayTrade)</a> </li>
+			<li><a href="/renda-variavel.php">Renda Variável (Comuns | DayTrade)</a> </li>
 			<li><a href="/fundos-imobiliarios.php">Fundos Imobiliários</a> </li>
 			<li><a href="/irrf.php">IRRF Fonte</a> </li>
-			<li><a href="">Kit Declaração</a> </li>
+			<li><a href="/kit-declaracao.php">Kit Declaração</a> </li>
 		</ul>	
 	</li>
 	

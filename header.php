@@ -83,10 +83,11 @@ jQuery(document).ready(function($) {
 
 	<li class="minhaC"><a href="#">minha conta</a>
 		<ul class="subs">
-			<li><a href="">teste</a> </li>
-			<li><a href="">teste</a> </li>
-			<li><a href="">teste</a> </li>
-			<li><a href="">teste</a> </li>
+			<li><a href="/dados-cadastrais.php">Dados Cadastrais</a> </li>
+			<li><a href="/meu-contrato.php">Meu Contrato</a> </li>
+			<li><a href="/servicos-adicionais.php">Serviços Adicionais</a> </li>
+			<li><a href="/pagamentos.php">Pagamentos</a> </li>
+			<li><a href="/alterar-senha.php">Alterar Senha</a> </li>
 		</ul>	
 	</li>
 	   

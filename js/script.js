@@ -137,5 +137,26 @@ jQuery(".table-termo input.valor, .table-avista input.valor, .table-btc input.va
 	}
 });
 
+	jQuery('.bt-menos').live('click', function(){
+		jQuery(this).closest('table').find('tbody tr').fadeOut();
+		jQuery(this).removeClass('bt-menos').addClass('bt-mais');
+		return false;
+	});
+
+	jQuery('.bt-mais').live('click', function(){
+		jQuery(this).closest('table').find('tbody tr').fadeIn();
+		jQuery(this).removeClass('bt-mais').addClass('bt-menos');
+		return false;
+	});
+
+	jQuery('.bt-mais-bundle').live('click', function(){
+		jQuery('#main.renda-variavel #info .table-wrapper table tbody tr').fadeIn();
+		return false;
+	});
+
+	jQuery('.bt-menos-bundle').live('click', function(){
+		jQuery('#main.renda-variavel #info .table-wrapper table tbody tr').fadeOut();
+		return false;
+	});
 
 });

@@ -44,32 +44,204 @@
 			<div class="conteudos">
 
 				<div id="info">
+					
 					<p class="mercado">Tipo de Mercado/Ativo - JANEIRO</p>
-				
-					<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover">
-					  <thead >
-					    <th scope="col" width="70%" class="a-left">Mercado à Vista</th>
-					    <th scope="col" width="15%">Operações Comuns</th>
-					    <th scope="col" width="15%">Day-Trade</th>
-					  </thead>
-					  <tbody>
-						  <tr>
-						    <td class="a-left">Mercado à Vista - ações</td>
-						    <td>R$ 0.000,00</td>
-						    <td>R$ 0.000,00</td>
-						  </tr>
-						  <tr>
-						    <td class="a-left">Mercado à Vista - ouro</td>
-						    <td>R$ 0.000,00</td>
-						    <td>R$ 0.000,00</td>
-						  </tr>
-						  <tr>
-						    <td class="a-left">Mercado à Vista - ouro at. fin. fora bolsa</td>
-						    <td>R$ 0.000,00</td>
-						    <td>R$ 0.000,00</td>
-						  </tr>
-						</tbody>
-					</table>
+					<div class="table-wrapper">
+						<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover">
+						  <thead >
+						    <th scope="col" width="70%" class="a-left padding-fix"><a href="#" class="bt-menos"></a>Mercado à Vista</th>
+						    <th scope="col" width="15%">Operações Comuns</th>
+						    <th scope="col" width="15%">Day-Trade</th>
+						  </thead>
+						  <tbody>
+							  <tr>
+							    <td class="a-left">Mercado à Vista - ações</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado à Vista - ouro</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado à Vista - ouro at. fin. fora bolsa</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="table-wrapper">
+						<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover">
+						  <thead >
+						    <th scope="col" width="70%" class="a-left padding-fix"><a href="#" class="bt-menos"></a>Mercado Opções</th>
+						    <th scope="col" width="15%">Operações Comuns</th>
+						    <th scope="col" width="15%">Day-Trade</th>
+						  </thead>
+						  <tbody>
+							  <tr>
+							    <td class="a-left">Mercado opções - ações</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado opções - ouro</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado opções - fora de bolsa</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado opções - outros</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="table-wrapper">
+						<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover">
+						  <thead >
+						    <th scope="col" width="70%" class="a-left padding-fix"><a href="#" class="bt-menos"></a>Mercado Futuro</th>
+						    <th scope="col" width="15%">Operações Comuns</th>
+						    <th scope="col" width="15%">Day-Trade</th>
+						  </thead>
+						  <tbody>
+							  <tr>
+							    <td class="a-left">Mercado futuro - dólar dos EUA</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado futuro - índices</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado futuro - juros</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado futuro - outros</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="table-wrapper">
+						<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover">
+						  <thead >
+						    <th scope="col" width="70%" class="a-left padding-fix"><a href="#" class="bt-menos"></a>Mercado a Termo</th>
+						    <th scope="col" width="15%">Operações Comuns</th>
+						    <th scope="col" width="15%">Day-Trade</th>
+						  </thead>
+						  <tbody>
+							  <tr>
+							    <td class="a-left">Mercado termo - ações/ouro</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Mercado termo - outros</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="table-wrapper">
+						<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover">
+						  <thead >
+						    <th scope="col" width="70%" class="a-left padding-fix"><a href="#" class="bt-menos"></a>Resultados</th>
+						    <th scope="col" width="15%">Operações Comuns</th>
+						    <th scope="col" width="15%">Day-Trade</th>
+						  </thead>
+						  <tbody>
+							  <tr>
+							    <td class="a-left">RESULTADO LÍQUIDO DO MÊS</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Resultado negativo até o mês anterior</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">BASE DE CÁLCULO DO IMPOSTO</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Prejuízo a compensar</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Alíquota do imposto</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">IMPOSTO DEVIDO</td>
+							    <td>R$ 0.000,00</td>
+							    <td>R$ 0.000,00</td>
+							  </tr>
+							</tbody>
+						</table>
+					</div>
+
+					<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover" style="margin-top:10px;">
+						  <thead >
+						    <th scope="col" colspan="2" class="a-left">Consolidação do mês</th>
+						  </thead>
+						  <tbody>
+							  <tr>
+							    <td class="a-left">Total do imposto devido</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">IR fonte de Day-Trade no Mês</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">IR fonte de Day-Trade nos meses anteriores</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">IR fonte de Day-Trade a compensar</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">IR fonte (Lei nº 11.033/2004) no mês</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">IR fonte (Lei nº 11.033/2004) nos meses anteriores</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">IR fonte (Lei nº 11.033/2004) meses a compensar</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							  <tr>
+							    <td class="a-left">Imposto a pagar</td>
+							    <td width="15%">R$ 0.000,00</td>
+							  </tr>
+							</tbody>
+						</table>
+
+					
 				</div>
 
 				<div id="jan">

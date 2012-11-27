@@ -45,7 +45,11 @@
 
 				<div id="info">
 					
-					<p class="mercado">Tipo de Mercado/Ativo - JANEIRO</p>
+					<p class="mercado">
+						Tipo de Mercado/Ativo - JANEIRO
+						<a href="#" class="bt-menos-bundle"></a>
+						<a href="#" class="bt-mais-bundle"></a>
+					</p>
 					<div class="table-wrapper">
 						<table width="100%" cellspacing="0" class="data-table data-zebrada data-hover">
 						  <thead >
@@ -235,7 +239,10 @@
 							    <td width="15%">R$ 0.000,00</td>
 							  </tr>
 							  <tr>
-							    <td class="a-left">Imposto a pagar</td>
+							    <td class="a-left">
+							    	Imposto a pagar
+							    	<a class="bt-darf f-right"></a>
+							    </td>
 							    <td width="15%">R$ 0.000,00</td>
 							  </tr>
 							</tbody>

@@ -136,7 +136,6 @@ jQuery(".table-termo input.valor, .table-avista input.valor, .table-btc input.va
 		}
 	}
 });
-	
 
 
 });

@@ -51,7 +51,7 @@ Estarão disponíveis para busca apenas notas de corretagem processadas no siste
 			<br style="clear:both;" />
 		</label>
 
-		<button class="big-buscar">buscar</button>
+		<button class="big-buscar bt-buscar">buscar</button>
 	</div>
 
 	<table width="730" cellspacing="0" class="search-notas-salvas data-table data-zebrada data-hover">
@@ -75,8 +75,8 @@ Estarão disponíveis para busca apenas notas de corretagem processadas no siste
 				<td></td>
 				<td></td>
 				<td>
-					<button class="search">O</button>  
-					<button class="delete">-</button>
+					<button class="search bt-lupa">O</button>  
+					<button class="delete bt-excluir">-</button>
 				</td>
 			</tr>
 
@@ -86,8 +86,8 @@ Estarão disponíveis para busca apenas notas de corretagem processadas no siste
 				<td></td>
 				<td></td>
 				<td>
-					<button class="search">O</button>  
-					<button class="delete">-</button>
+					<button class="search bt-lupa">O</button>  
+					<button class="delete bt-excluir">-</button>
 				</td>
 			</tr>
 
@@ -97,8 +97,8 @@ Estarão disponíveis para busca apenas notas de corretagem processadas no siste
 				<td></td>
 				<td></td>
 				<td>
-					<button class="search">O</button>  
-					<button class="delete">-</button>
+					<button class="search bt-lupa">O</button>  
+					<button class="delete bt-excluir">-</button>
 				</td>
 			</tr>
 
@@ -108,8 +108,8 @@ Estarão disponíveis para busca apenas notas de corretagem processadas no siste
 				<td></td>
 				<td></td>
 				<td>
-					<button class="search">O</button>  
-					<button class="delete">-</button>
+					<button class="search bt-lupa">O</button>  
+					<button class="delete bt-excluir">-</button>
 				</td>
 			</tr>
 

@@ -93,7 +93,7 @@
 		<td><input type="text"/> </td>
 		<td><input type="text"/> </td>
 		<td><input type="text"/> </td>
-		<td class="btn-table"><button class="add">+</button><button class="less">-</button></td>
+		<td class="btn-table"><button class="add  big-mais">+</button><button class="less  big-menos ">-</button></td>
 	</tr>
 	<tr>
 		<td><select name="" id="">
@@ -109,7 +109,7 @@
 		<td><input type="text"/> </td>
 		<td><input type="text"/> </td>
 		<td><input type="text"/> </td>
-		<td class="btn-table"><button class="add">+</button><button class="less">-</button></td>
+		<td class="btn-table"><button class="add  big-mais">+</button><button class="less  big-menos ">-</button></td>
 	</tr>
 	<tr>
 		<td><select name="" id="">
@@ -125,7 +125,7 @@
         <td><input type="text"/> </td>
         <td><input type="text"/> </td>
         <td><input type="text"/> </td>
-		<td class="btn-table"><button class="add">+</button><button class="less">-</button></td>
+		<td class="btn-table"><button class="add  big-mais">+</button><button class="less  big-menos ">-</button></td>
 	</tr>
 
 </tbody>
@@ -461,7 +461,7 @@
 
 <div class="step step3">
 	<span class="number">3</span>
-	<button class="salvar">salvar</button>
+	<button class="salvar bt-salvar">salvar</button>
 	<div class="message calculando">Aguarde estamos salvando sua nota</div>
 </div>
 </div>

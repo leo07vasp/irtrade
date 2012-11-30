@@ -33,7 +33,7 @@
 		<input style="width:150px;" id="nome" type="text"/>
 		</div>
 		
-<button class="big-buscar">buscar</button>
+<button class="big-buscar bt-buscar">buscar</button>
 
 	</div>
 
@@ -93,8 +93,8 @@
 				<td><input type="text"/> </td>
 				<td><input type="text"/> </td>
 				<td class="btn-table">
-					<button class="add"></button>
-				<button class="less"></button>		
+					<button class="add big-mais"></button>
+				<button class="less big-menos"></button>		
 				</td>
 			</tr>
 
@@ -105,7 +105,7 @@
 
 <div class="step step3">
 	<span class="number">3</span>
-	<button class="salvar">salvar</button>
+	<button class="salvar bt-salvar">salvar</button>
 	<div class="message calculando">Aguarde estamos salvando sua nota</div>
 </div>
 

@@ -39,7 +39,7 @@
 						</label>
 					
 				
-			<button class="big-buscar">Buscar</button>
+			<button class="big-buscar bt-buscar">Buscar</button>
 				
 			
 		

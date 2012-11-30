@@ -41,8 +41,8 @@
   			<option value="audi">Audi</option>
 		</select>
 <div class="butons-control-select">
-<button class="go">Go</button>
-<button class="back">back</button>
+<button class="seta-direita go">Go</button>
+<button class="seta-esquerda back">back</button>
 </div>
 
 <select class="end-select dados-start" multiple="multiple">
@@ -52,7 +52,7 @@
 
 
 </div>
-<button class="salvar">salvar</button>
+<button class="bt-salvar">salvar</button>
 
 		</div>
 
@@ -147,7 +147,7 @@
 
 			</table>
 
-<button class="salvar">salvar</button>
+<button class="bt-salvar">salvar</button>
 
 		</div>
 

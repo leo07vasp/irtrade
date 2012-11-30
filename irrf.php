@@ -17,7 +17,7 @@
 
 		</select>
 		</div>
-		<button class="big-buscar">buscar</button>
+		<button class="big-buscar bt-buscar">buscar</button>
 	</div>				
 			
 		

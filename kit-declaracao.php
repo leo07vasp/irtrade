@@ -29,7 +29,7 @@
 					
 				
 			</div>					
-							<button class="gerar">gerar</button>	
+							<button class="gerar bt-gerar">gerar</button>	
 						
 					
 				

@@ -393,8 +393,8 @@ pharetra, nunc et malesuada consequat, neque sapien posuere dui</p>
 
 </table>
 
-<button class="salvar">salvar</button>
-<button class="cancelar">cancelar</button>
+<button class="salvar bt-salvar">salvar</button>
+<button class="cancelar bt-cancelar">cancelar</button>
 
 </div>
 

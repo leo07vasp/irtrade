@@ -34,12 +34,12 @@
 		<div class="search-content">
 			<div>
 			  <input type="text" disabled id="arquivoinput" name="arquivo" value="Nenhum arquivo selecionado" readonly="readonly" />
-			  <button onclick="jQuery('.filechoose').trigger('click')" class="selecionar">selecionar</button>
+			  <button onclick="jQuery('.filechoose').trigger('click')" class="selecionar buscar-mini">selecionar</button>
 		      <input class="no-display filechoose" type="file" name="arquivo" onchange="jQuery('#arquivoinput').val($(this).val())" />
 		        </div>
 			</div>
 
-			<button class="enviar">enviar</button>	
+			<button class="enviar bt-enviar">enviar</button>	
 				<div class="progress-contaier">
 			<div class="progressbar"><div class="percorrido"></div> </div>
 			<span>45% Concluido</span>

@@ -17,7 +17,7 @@
 		<input type="text" name="repeatSenha" id="repeatSenha"/>
 		
 		
-		<button class="salvar">salvar</button>
+		<button class="salvar bt-salvar">salvar</button>
 		
 	</div>
 	

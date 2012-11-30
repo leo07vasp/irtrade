@@ -23,14 +23,14 @@ Caso você queira apenas saber o que esta em aberto em sua carteira selecione ap
 			<label for="DataBase">Data Base</label>
 			<input type="text" name="dataBase" id="DataBase" />
 		</div>
-		<button class="big-buscar">buscar</button>
+		<button class="big-buscar bt-buscar">buscar</button>
 	</div>
 
 	<div class="result-pesquisa">
 		<span>
 			ATIVOS CUSTODIADOS BOVESPA EM 15/08/2012
 
-			<a href="#" class="bt-pdf"></a>
+			<a href="#" class="bt-pdf f-right"></a>
 		</span>
 
 		<p>MERCADO: VISTA</p>

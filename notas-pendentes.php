@@ -19,7 +19,7 @@
 
 		</select>
 		</div>
-		<button class="big-buscar">buscar</button>
+		<button class="big-buscar bt-buscar">buscar</button>
 	</div>
 
 	<table width="930" cellspacing="0" class="adc-notas-pendentes data-table">
@@ -43,8 +43,8 @@
 				<td></td>
 				<td></td>
 				<td>
-					<button class="search">O</button>  
-					<button class="delete">-</button>
+					<button class="search bt-lupa">O</button>  
+					<button class="delete bt-excluir">-</button>
 				</td>
 			</tr>
 
@@ -54,8 +54,8 @@
 				<td></td>
 				<td></td>
 				<td>
-					<button class="search">O</button>  
-					<button class="delete">-</button>
+					<button class="search bt-lupa">O</button>  
+					<button class="delete bt-excluir">-</button>
 				</td>
 			</tr>
 
@@ -65,8 +65,8 @@
 				<td></td>
 				<td></td>
 				<td>
-					<button class="search">O</button>  
-					<button class="delete">-</button>
+					<button class="search bt-lupa">O</button>  
+					<button class="delete bt-excluir">-</button>
 				</td>
 			</tr>
 

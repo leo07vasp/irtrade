@@ -106,7 +106,7 @@ jQuery('table.com-hover-input td input').live({
 });
 
 
-var trNota = '<tr><td>	<select id="" name="">		<option value="1">tipo 1</option>	<option value="2">tipo 2</option>	</select></td><td><select id="" name=""><option value="1">corretota 1</option>	<option value="2">corretora 2</option>	</select></td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td>	<td class="btn-table"><button class="add">+</button><button class="less">-</button></td></tr>';
+var trNota = '<tr><td>	<select id="" name="">		<option value="1">tipo 1</option>	<option value="2">tipo 2</option>	</select></td><td><select id="" name=""><option value="1">corretota 1</option>	<option value="2">corretora 2</option>	</select></td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td>	<td class="btn-table"><button class="add big-mais">+</button><button class="less big-menos">-</button></td></tr>';
 
 jQuery('.notaT1 .btn-table .add').live('click', function(){
 	jQuery(this).closest('tr').after(trNota);

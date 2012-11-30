@@ -20,7 +20,7 @@ Caso você queira apenas saber o que esta em aberto em sua carteira selecione ap
 				<option value="data4">Data 4</option>
 			</select>
 			</div>
-			<button class="big-buscar">buscar</button>
+			<button class="big-buscar bt-buscar">buscar</button>
 		</div>
 
 		<div class="bovespa-container">

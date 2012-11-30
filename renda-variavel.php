@@ -17,7 +17,7 @@
 			<option value="ano4">Ano 4</option>
 		</select>
 		</div>
-		<button class="big-buscar">buscar</button>
+		<button class="big-buscar bt-buscar">buscar</button>
 	</div>
 
 	<br style="clear:both;" />

@@ -165,7 +165,7 @@
 				<span class="checked"></span> Residencial
 			</label>
 
-			<input type="submit" class="bt-alterar" />
+			<button class="bt-alterar">Alterar</button>
 
 		</fieldset>
 

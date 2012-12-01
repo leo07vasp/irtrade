@@ -1,6 +1,4 @@
 jQuery(document).ready(function($) {
-
-
 /*Script de tabs dados iniciais*/
 jQuery('.tabs ul.links li a').live('click', function(){
 	var mostrar = jQuery(this).attr('href');
@@ -11,6 +9,15 @@ jQuery('.tabs ul.links li a').live('click', function(){
 	return false;
 });
 
+
+jQuery('body').on('keydown', 'select, input, textarea', function(e){
+        var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+        if(key == 13) {
+            e.preventDefault();
+            var inputs = $(this).closest('form').find(':input:visible');
+            inputs.eq( inputs.index(this)+ 1 ).focus();
+        }
+});
 
 
 /*Script que controla os selects associar corretoras*/

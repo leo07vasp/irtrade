@@ -1,13 +1,11 @@
 <?php include("header.php"); ?>
 
 <script type="text/javascript">
-	
-	jQuery(document).ready(function($) {
-		//jQuery('.tabs ul.links li:eq(2) a').trigger('click');
-	});
-	
+jQuery(document).ready(function($) {
+		jQuery('.tabs ul.links li:eq(3) a').trigger('click');
+	});	
 </script>
-<div id="main">
+<div id="main" class="dados-iniciais">
 	
 
 	<div class="title-content-default">
@@ -24,6 +22,7 @@
 		<li class="active"><a href="#corretoras">associar corretoras</a> </li>
 		<li><a href="#custodia">custódia inicial</a> </li>
 		<li><a href="#valores">Valores acumolados</a> </li>
+		<li><a href="#fundos">Fundos Imobiliarios</a> </li>
 	</ul>
 
 	<div class="conteudos">
@@ -237,6 +236,64 @@
 
 		</div>
 
+
+<div id="fundos">
+	
+	<p class="tab-description">
+				Os campos dos valores acumulados deverão ser preenchidos corretamente para que o sistema possa efetuar o cálculo correto. Importante: se você não possuir os valores acumulados em 
+				operações anteriores, entre em contato conosco que auxiliaremos na obtenção dos mesmos, pois somente assim você poderá compensar prejuízos anteriores em futuras operações
+			</p>
+
+
+<p class="input-value-valores2">
+
+	<br/>
+	<input type="checkbox" id="valorNao2"/>
+	<label for="valorNao2">Não possuo valores acumulados</label>
+	<br/>
+	<br/>
+	<input type="checkbox" id="valorSim2"/>
+	<label for="valorSim2">Possuo valores acumulados mas não sei informar.</label>
+</p>	
+
+<br/>
+<br/>
+<table width="200" cellspacing="0" id="fundos-table" class="com-hover-input ">
+	<col style="20px"/>
+	<col style="40px"/>
+	<thead>
+		<th>Ano</th>
+		<th>Valor</th>
+		<th></th>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td><input style="width:75px;" type="text"/> </td>
+			<td><input style="width:100px;" type="text"/> </td>
+			<td><button class="insert-btn"></button> </td>
+			
+		</tr>
+		
+	</tbody>
+</table>
+<hr class="blue-sep"/>
+<table cellspacing="0" id="fundos-table2" class="com-hover-input ">
+	<thead>
+		<th>Ano</th>
+		<th>Valor</th>
+		<th></th>
+	</thead>
+	
+	<tbody>
+		
+		
+	</tbody>
+</table>
+
+
+
+</div>
 
 	</div>
 

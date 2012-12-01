@@ -15,7 +15,9 @@
 jQuery(document).ready(function($) {
 	jQuery('ul.menu > li').live({
 		mouseenter:function(){
+			if(jQuery(this).find('ul.subs li').length){
 			jQuery(this).find('ul.subs').show();
+			}
 		},
 		mouseleave: function(){
 			jQuery(this).find('ul.subs').hide();
@@ -93,12 +95,9 @@ jQuery(document).ready(function($) {
 	   
 
 
-	   <li class="links"><a href="#">links uteis</a>
+	   <li class="links"><a href="/links-uteis.php">links uteis</a>
 			<ul class="subs">
-				<li><a href="">teste</a> </li>
-				<li><a href="">teste</a> </li>
-				<li><a href="">teste</a> </li>
-				<li><a href="">teste</a> </li>
+	
 			</ul>	
 		</li>
 </ul>

@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+
+/*Script de tabs dados iniciais*/
 jQuery('.tabs ul.links li a').live('click', function(){
 	var mostrar = jQuery(this).attr('href');
 	jQuery('.tabs ul.links li').removeClass('active');
@@ -10,6 +12,8 @@ jQuery('.tabs ul.links li a').live('click', function(){
 });
 
 
+
+/*Script que controla os selects associar corretoras*/
 jQuery('.butons-control-select .go').live('click', function(){
 	var selected1 = jQuery('.start-select.dados-start option:selected');
 	jQuery('.start-select.dados-start option:selected').remove();
@@ -26,6 +30,9 @@ jQuery('.butons-control-select .back').live('click', function(){
 });
 
 
+
+
+/*Script que controla o insert e remove na tabela de custodia dados iniciais*/
 jQuery('.custodia tr .insert-btn').live('click', function(){
 	jQuery('.custodias').show();
 	var tr = jQuery(this).closest('tr').clone();
@@ -45,6 +52,32 @@ jQuery('.custodias tr .remove-btn').live('click', function(){
 
 });
 
+
+/*script que controla o insert e remove fundo imobiliarios*/
+jQuery('#fundos-table tr .insert-btn').live('click', function(){
+	jQuery('#fundos-table').show();
+	var tr = jQuery(this).closest('tr').clone();
+	jQuery(this).find('input').val('');
+	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
+	jQuery(tr).find('input').prop('disabled', true);
+	jQuery('#fundos-table2 tbody').append(tr);
+	jQuery('#fundos-table2').show();
+	return false;
+
+});
+
+
+jQuery('#fundos-table2 tr .remove-btn').live('click', function(){
+	jQuery(this).closest('tr').remove();
+		if(jQuery('#fundos-table2 tbody tr').length <= 0){
+	jQuery('#fundos-table2').hide();
+	}
+	return false;
+});
+
+
+
+/*script que controla o insert e remove na tabela de valores dados iniciais*/
 jQuery('.valores tr .insert-btn').live('click', function(){
 	jQuery('.valores2').show();
 	var tr = jQuery(this).closest('tr').clone();
@@ -64,7 +97,7 @@ jQuery('.valores2 tr .remove-btn').live('click', function(){
 	return false;
 });
 
-
+// script que controla os inputs checked que desabilita a edicao da tabela
 jQuery('#valorNao').live('change',function(){
 	if(jQuery(this).is(':checked')){
 		jQuery('#valorSim').prop('disabled',true);
@@ -85,6 +118,31 @@ jQuery('#valorSim').live('change',function(){
 	}
 });
 
+
+
+// script que controla os inputs checked que desabilita a edicao da tabela fundos imobiliarios
+jQuery('#valorNao2').live('change',function(){
+	if(jQuery(this).is(':checked')){
+		jQuery('#valorSim2').prop('disabled',true);
+		jQuery('#fundos-table tr input').prop('disabled', true);
+	}else{
+		jQuery('#valorSim2').prop('disabled',false);
+		jQuery('#fundos-table tr input').prop('disabled', false);
+	}
+});
+
+jQuery('#valorSim2').live('change',function(){
+	if(jQuery(this).is(':checked')){
+		jQuery('#valorNao2').prop('disabled',true);
+		jQuery('#fundos-table tr input').prop('disabled', true);
+	}else{
+		jQuery('#valorNao2').prop('disabled',false);
+		jQuery('#fundos-table tr input').prop('disabled', false);
+	}
+});
+
+
+// script que controla a mudanca de tabela quando o tipo de nota e alterado 
 jQuery('select#nota').live('change', function(){
 	if(jQuery(this).find('option:selected').val() == 'bovespa'){
 		jQuery('table.nota-bmf').hide();
@@ -96,6 +154,8 @@ jQuery('select#nota').live('change', function(){
 });
 
 
+/*script pra alterar o bg da td das tabelas com inputs que precisam que fique com aparencia de input text 100%*/
+
 jQuery('table.com-hover-input td input').live({
 	focusout: function(){
 		jQuery(this).parent().css('background','#FFF');
@@ -105,7 +165,7 @@ jQuery('table.com-hover-input td input').live({
 	}
 });
 
-
+// script que adiciona linha na tabela de nota
 var trNota = '<tr><td>	<select id="" name="">		<option value="1">tipo 1</option>	<option value="2">tipo 2</option>	</select></td><td><select id="" name=""><option value="1">corretota 1</option>	<option value="2">corretora 2</option>	</select></td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td>	<td class="btn-table"><button class="add big-mais">+</button><button class="less big-menos">-</button></td></tr>';
 
 jQuery('.notaT1 .btn-table .add').live('click', function(){
@@ -116,6 +176,8 @@ jQuery('.notaT1 .btn-table .less').live('click', function(){
 	jQuery(this).closest('tr').remove();
 });
 
+
+// script que controla as contas no liquida termo dialog
 jQuery(".table-termo input.valor, .table-avista input.valor, .table-btc input.valor").live({
 	blur: function(){
 		var indexdeselecao1 = jQuery(this).closest('tr').index();
@@ -137,6 +199,7 @@ jQuery(".table-termo input.valor, .table-avista input.valor, .table-btc input.va
 	}
 });
 
+// script que controla os collapses de botoes em tabelas
 	jQuery('.bt-menos').live('click', function(){
 		jQuery(this).closest('table').find('tbody tr').fadeOut();
 		jQuery(this).removeClass('bt-menos').addClass('bt-mais');

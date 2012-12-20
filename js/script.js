@@ -84,14 +84,17 @@ jQuery('#fundos-table2 tr .remove-btn').live('click', function(){
 
 
 
-/*script que controla o insert e remove na tabela de valores dados iniciais*/
+/*script que controla o insert e remove na tabela de valores acumulados dados iniciais*/
 jQuery('.valores tr .insert-btn').live('click', function(){
-	jQuery('.valores2').show();
 	var tr = jQuery(this).closest('tr').clone();
 	jQuery(this).find('input').val('');
 	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
 	jQuery(tr).find('input').prop('disabled', true);
+	if(jQuery('#valorNao').prop('disabled') != true && jQuery('#valorSim').prop('disabled') != true){
 	jQuery('.valores2 tbody').append(tr);
+	jQuery('.valores2').show();
+	}
+
 	return false;
 
 });

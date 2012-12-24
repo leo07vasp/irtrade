@@ -258,10 +258,67 @@ jQuery(document).ready(function($) {
 
 <br/>
 <br/>
-<table width="200" cellspacing="0" id="fundos-table" class="com-hover-input ">
-	<col style="20px"/>
-	<col style="40px"/>
+
+<h2 class="sub-title">Resultado Anos Anteriores</h2>
+<div class="table-wrapper">
+	<table width="200" cellspacing="0" id="fundos-table" class="com-hover-input ">
+		<col style="75px"/>
+		<col style="75px"/>
+		<col style="100px"/>
+		<thead>
+			<th>Mês</th>
+			<th>Ano</th>
+			<th>Valor</th>
+			<th></th>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td><input style="width:75px;" type="text"/> </td>
+				<td><input style="width:75px;" type="text"/> </td>
+				<td class="border-fix"><input style="width:100px;" type="text"/> </td>
+				<td><button class="insert-btn"></button> </td>
+				
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+
+<h2 class="sub-title">Resultado Ano Atual</h2>
+<div class="table-wrapper">
+	<table width="200" cellspacing="0" id="fundos-table" class="com-hover-input ">
+		<col style="75px"/>
+		<col style="75px"/>
+		<col style="100px"/>
+		<thead>
+			<th>Mês</th>
+			<th>Ano</th>
+			<th>Valor</th>
+			<th></th>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td><input style="width:75px;" type="text"/> </td>
+				<td><input style="width:75px;" type="text"/> </td>
+				<td class="border-fix"><input style="width:100px;" type="text"/> </td>
+				<td><button class="insert-btn"></button> </td>
+				
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+
+<hr class="blue-sep"/>
+
+<table width="200" cellspacing="0" id="fundos-table" class="com-hover-input dark-table">
+	<col style="75px"/>
+	<col style="75px"/>
+	<col style="100px"/>
 	<thead>
+		<th>Mês</th>
 		<th>Ano</th>
 		<th>Valor</th>
 		<th></th>
@@ -269,29 +326,18 @@ jQuery(document).ready(function($) {
 	
 	<tbody>
 		<tr>
+			<td><input style="width:75px;" type="text" /> </td>
 			<td><input style="width:75px;" type="text"/> </td>
-			<td><input style="width:100px;" type="text"/> </td>
+			<td class="border-fix"><input style="width:100px;" type="text"/> </td>
 			<td><button class="insert-btn"></button> </td>
 			
 		</tr>
 		
 	</tbody>
 </table>
-<hr class="blue-sep"/>
-<table cellspacing="0" id="fundos-table2" class="com-hover-input ">
-	<thead>
-		<th>Ano</th>
-		<th>Valor</th>
-		<th></th>
-	</thead>
-	
-	<tbody>
-		
-		
-	</tbody>
-</table>
 
 
+<button type="button" class="bt-salvar" />
 
 </div>
 

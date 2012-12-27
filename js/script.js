@@ -71,7 +71,7 @@ jQuery('.custodia tr .insert-btn').live('click', function(){
 
 jQuery('.custodias tr .remove-btn').live('click', function(){
 	
-	if(jQuery('.custodias tbody tr').length != 1){
+	if(jQuery('.custodias tbody tr:visible').length != 1){
 	jQuery(this).closest('tr').hide();
 	}
 	return false;
@@ -96,7 +96,7 @@ if(jQuery('#valorNao2').prop('disabled') != true && jQuery('#valorSim2').prop('d
 
 
 jQuery('#fundos-table2 tr .remove-btn').live('click', function(){
-		if(jQuery('#fundos-table2 tbody tr').length != 1){
+		if(jQuery('#fundos-table2 tbody tr:visible').length != 1){
 	jQuery(this).closest('tr').hide();
 	}
 	return false;
@@ -121,7 +121,7 @@ jQuery('.valores tr .insert-btn').live('click', function(){
 
 jQuery('.valores2 tr .remove-btn').live('click', function(){
 	
-		if(jQuery('.valores2 tbody tr').length != 1){
+		if(jQuery('.valores2 tbody tr:visible').length != 1){
 	jQuery(this).closest('tr').hide();
 	}
 	return false;
@@ -264,7 +264,7 @@ jQuery('.evento-filter .add').live('click', function(){
 });
 
 jQuery('.evento-filter .less').live('click', function(){
-	if(jQuery('.evento-filter tbody tr').length != 1){
+	if(jQuery('.evento-filter tbody tr:visible').length != 1){
 		jQuery(this).closest('tr').hide();
 	}
 	return false;

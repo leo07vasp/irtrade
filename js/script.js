@@ -70,9 +70,9 @@ jQuery('.custodia tr .insert-btn').live('click', function(){
 });
 
 jQuery('.custodias tr .remove-btn').live('click', function(){
-	jQuery(this).closest('tr').remove();
-	if(jQuery('.custodias tbody tr').length <= 0){
-		jQuery('.custodias').hide();
+	
+	if(jQuery('.custodias tbody tr').length != 1){
+	jQuery(this).closest('tr').hide();
 	}
 	return false;
 
@@ -120,9 +120,9 @@ jQuery('.valores tr .insert-btn').live('click', function(){
 });
 
 jQuery('.valores2 tr .remove-btn').live('click', function(){
-	jQuery(this).closest('tr').remove();
-		if(jQuery('.valores2 tbody tr').length <= 0){
-	jQuery('.valores2').hide();
+	
+		if(jQuery('.valores2 tbody tr').length != 1){
+	jQuery(this).closest('tr').hide();
 	}
 	return false;
 });
@@ -203,7 +203,7 @@ jQuery('.notaT1 .btn-table .add').live('click', function(){
 });
 
 jQuery('.notaT1 .btn-table .less').live('click', function(){
-	jQuery(this).closest('tr').remove();
+	jQuery(this).closest('tr').hide();
 });
 
 
@@ -265,7 +265,7 @@ jQuery('.evento-filter .add').live('click', function(){
 
 jQuery('.evento-filter .less').live('click', function(){
 	if(jQuery('.evento-filter tbody tr').length != 1){
-		jQuery(this).closest('tr').remove();
+		jQuery(this).closest('tr').hide();
 	}
 	return false;
 });

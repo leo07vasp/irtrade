@@ -36,6 +36,38 @@
 <button class="big-buscar bt-buscar">buscar</button>
 
 	</div>
+	
+	<div class="fieldset-search">
+	
+
+	<div class="content-search corretora-search">
+	<label for="corrteora">Corretora</label> <br>
+	<select id="corretora" name="corretora" style="width:135px;">
+		<option value="target">target</option>
+		<option value="unifil">unifil</option>
+	</select>
+</div> 
+
+	<div class="content-search nota-search">
+		<label for="n-nota">Número da nota</label><br>
+		<input type="text" placeholder="Numero da nota" style="width:180px;">
+	</div>
+	
+	<div class="content-search pregao-search">
+		<label for="d-pregao">Data pregão</label><br>
+		<input type="text" placeholder="Data do Pregão" name="d-pregao" id="d-pregao" style="width:100px;">
+	</div>
+
+	<div class="content-search cliente-search">
+		<label for="c-cliente">Código do cliente</label><br>
+		<input type="text" placeholder="código do cliente" style="width:65px;">
+	</div>
+	
+	<div class="content-search acessor-search">
+		<label for="aceesor">Acessor</label><br>
+		<input type="text" placeholder="acessor" name="aceesor" id="aceesor" style="width:66px;">
+	</div>
+</div>
 
 
 

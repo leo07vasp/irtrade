@@ -105,6 +105,7 @@ Caso você queira apenas saber o que esta em aberto em sua carteira selecione ap
 				</div>
 
 			</div>
+			</div>
 
 			<br style="clear:both;" />
 		</div>

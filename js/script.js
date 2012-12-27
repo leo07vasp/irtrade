@@ -1,13 +1,32 @@
 jQuery(document).ready(function($) {
-/*Script de tabs dados iniciais*/
-jQuery('.tabs ul.links li a').live('click', function(){
-	var mostrar = jQuery(this).attr('href');
-	jQuery('.tabs ul.links li').removeClass('active');
-	jQuery(this).parent().addClass('active');
-	jQuery('.conteudos > div').hide();
-	jQuery(mostrar).show();
-	return false;
+
+/*Script para mudança de selects clonados*/
+jQuery('select').live('change', function(){
+	  jQuery(this).find(':selected').attr('selected', 'selected').siblings().removeAttr('selected');
 });
+
+
+/*Script de tabs dados iniciais*/
+
+       jQuery( ".tabs" ).tabs({
+            beforeLoad: function( event, ui ) {
+                ui.jqXHR.error(function() {
+                    ui.panel.html(
+                        "Couldn't load this tab. We'll try to fix this as soon as possible. " +
+                        "If this wouldn't be a demo." );
+                });
+            }
+        });
+
+
+// jQuery('.tabs ul.links li a').live('click', function(){
+// 	var mostrar = jQuery(this).attr('href');
+// 	jQuery('.tabs ul.links li').removeClass('active');
+// 	jQuery(this).parent().addClass('active');
+// 	jQuery('.conteudos > div').hide();
+// 	jQuery(mostrar).show();
+// 	return false;
+// });
 
 
 jQuery('body').on('keydown', 'select, input, textarea', function(e){
@@ -62,6 +81,7 @@ jQuery('.custodias tr .remove-btn').live('click', function(){
 
 /*script que controla o insert e remove fundo imobiliarios*/
 jQuery('#fundos-table tr .insert-btn').live('click', function(){
+if(jQuery('#valorNao2').prop('disabled') != true && jQuery('#valorSim2').prop('disabled') != true){
 	jQuery('#fundos-table').show();
 	var tr = jQuery(this).closest('tr').clone();
 	jQuery(this).find('input').val('');
@@ -69,15 +89,15 @@ jQuery('#fundos-table tr .insert-btn').live('click', function(){
 	jQuery(tr).find('input').prop('disabled', true);
 	jQuery('#fundos-table2 tbody').append(tr);
 	jQuery('#fundos-table2').show();
+}
 	return false;
 
 });
 
 
 jQuery('#fundos-table2 tr .remove-btn').live('click', function(){
-	jQuery(this).closest('tr').remove();
-		if(jQuery('#fundos-table2 tbody tr').length <= 0){
-	jQuery('#fundos-table2').hide();
+		if(jQuery('#fundos-table2 tbody tr').length != 1){
+	jQuery(this).closest('tr').hide();
 	}
 	return false;
 });
@@ -231,5 +251,23 @@ jQuery(".table-termo input.valor, .table-avista input.valor, .table-btc input.va
 		jQuery('#main.renda-variavel #info .table-wrapper table tbody tr').fadeOut();
 		return false;
 	});
+
+
+/*adciona e remove linhas no eventos corporativos*/
+
+
+jQuery('.evento-filter .add').live('click', function(){
+	var tr = jQuery(this).closest('tr').clone();
+	jQuery(tr).find('input').val('');
+	jQuery(this).closest('tr').after(jQuery(tr));
+	return false;
+});
+
+jQuery('.evento-filter .less').live('click', function(){
+	if(jQuery('.evento-filter tbody tr').length != 1){
+		jQuery(this).closest('tr').remove();
+	}
+	return false;
+});
 
 });

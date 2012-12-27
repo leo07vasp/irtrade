@@ -105,4 +105,24 @@ jQuery(document).ready(function($) {
 </div>
 
 
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+         jQuery( "#carregando" ).dialog({
+            autoOpen: false,
+            modal: true,
+            title: 'Aguarde',
+            width: 330
+        });
+         jQuery("#carregando").siblings('div.ui-dialog-titlebar').remove();
+    });
+//abrindo mensagem ---> jQuery( "#carregando" ).dialog('open');    
+//fechando mensagem ---> jQuery( "#carregando" ).dialog('close');    
+</script>
+
+<div id="carregando">
+	<img src="/loader.gif" alt="carregando"/>
+	<p class="text-apresentcao">Aguarde estamos processando sua solicitação</p>
+</div>
+
+
 </html>

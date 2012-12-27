@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
 <div class="tabs dados-iniciais-content">	
 
 	<ul class="links">
-		<li class="active"><a href="#corretoras">associar corretoras</a> </li>
+		<li><a href="#corretoras">associar corretoras</a> </li>
 		<li><a href="#custodia">custódia inicial</a> </li>
 		<li><a href="#valores">Valores acumolados</a> </li>
 		<li><a href="#fundos">Fundos Imobiliarios</a> </li>
@@ -75,9 +75,20 @@ jQuery(document).ready(function($) {
 
 				<tbody>
 					<tr>
+						<td>
+							<select name="corretora" id="corretora">
+								<option value="1" selected="selected">n1</option>
+								<option value="2" >n2</option>
+								<option value="3" >n3</option>
+							</select>
+						</td>
 						<td><input type="text" /></td>
-						<td><input type="text" /></td>
-						<td><input type="text" /></td>
+						<td>
+							<select name="cv" id="cv">
+								<option value="1" selected="selected">1</option>
+								<option value="2" >2</option>
+							</select>
+						</td>
 						<td><input type="text" /></td>
 						<td><input type="text" /></td>
 						<td><input type="text" /></td>
@@ -313,7 +324,7 @@ jQuery(document).ready(function($) {
 
 <hr class="blue-sep"/>
 
-<table width="200" cellspacing="0" id="fundos-table" class="com-hover-input dark-table">
+<table width="200" cellspacing="0" id="fundos-table2" class="com-hover-input dark-table">
 	<col style="75px"/>
 	<col style="75px"/>
 	<col style="100px"/>
@@ -329,7 +340,7 @@ jQuery(document).ready(function($) {
 			<td><input style="width:75px;" type="text" /> </td>
 			<td><input style="width:75px;" type="text"/> </td>
 			<td class="border-fix"><input style="width:100px;" type="text"/> </td>
-			<td><button class="insert-btn"></button> </td>
+			<td><button class="remove-btn"></button> </td>
 			
 		</tr>
 		

@@ -48,7 +48,11 @@
 		</div>
 
 	</div>
-
+<!--
+atualizando valores no progressbar
+jQuery('.progressbar .percorrido').css('width', '80%');
+jQuery('.progress-contaier span').text('80% Concluido');
+ -->
 </div>
 
 <?php include("footer.php"); ?>

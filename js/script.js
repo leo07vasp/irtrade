@@ -270,11 +270,13 @@ jQuery(".table-termo input.valor, .table-avista input.valor, .table-btc input.va
 jQuery('.evento-filter .add').live('click', function(){
 	var tr = jQuery(this).closest('tr').clone();
 	jQuery(tr).find('input').val('');
+	tr.find('input[name="Acao"]').val('inlcuir');
 	jQuery(this).closest('tr').after(jQuery(tr));
 	return false;
 });
 
 jQuery('.evento-filter .less').live('click', function(){
+	jQuery(this).closest('tr').find('input[name="Acao"]').val('excluir');
 	if(jQuery('.evento-filter tbody tr:visible').length != 1){
 		jQuery(this).closest('tr').hide();
 	}

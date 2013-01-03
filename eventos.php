@@ -119,7 +119,10 @@
 		<tbody>
 			<tr>
 				
-				<td><input type="text"/> </td>
+				<td>
+						<input type="hidden" name="NotaId"/ value="0"/>
+			<input type="hidden" name="Acao"/ value=""/>
+					<input type="text"/> </td>
 				<td><input type="text"/> </td>
 				<td><input type="text"/> </td>
 				<td><input type="text"/> </td>

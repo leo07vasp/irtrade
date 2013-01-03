@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-		jQuery('.tabs ul.links li:eq(3) a').trigger('click');
+		jQuery('.tabs ul.links li:eq(1) a').trigger('click');
 	});	
 </script>
 <div id="main" class="dados-iniciais">
@@ -76,6 +76,8 @@ jQuery(document).ready(function($) {
 				<tbody>
 					<tr>
 						<td>
+							<input type="hidden" name="notaId" value="0"/>
+							<input type="hidden" name="acao" value=""/>
 							<select name="corretora" id="corretora">
 								<option value="1" selected="selected">n1</option>
 								<option value="2" >n2</option>

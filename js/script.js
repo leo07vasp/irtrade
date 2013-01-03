@@ -62,9 +62,11 @@ jQuery('.butons-control-select .back').live('click', function(){
 jQuery('.custodia tr .insert-btn').live('click', function(){
 	jQuery('.custodias').show();
 	var tr = jQuery(this).closest('tr').clone();
-	jQuery(this).find('input').val('');
+	jQuery(this).closest('tr').find('input').val('');
+	jQuery(this).closest('tr').find('select option:first-child').attr("selected", "selected");
 	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
 	jQuery(tr).find('input').prop('disabled', true);
+	tr.find('input[name="acao"]').val('inlcuir');
 	jQuery('.custodias tbody').append(tr);
 	return false;
 });
@@ -72,6 +74,7 @@ jQuery('.custodia tr .insert-btn').live('click', function(){
 jQuery('.custodias tr .remove-btn').live('click', function(){
 	
 	if(jQuery('.custodias tbody tr:visible').length != 1){
+	jQuery(this).closest('tr').find('input[name="acao"]').val('excluir')	
 	jQuery(this).closest('tr').hide();
 	}
 	return false;

@@ -65,8 +65,8 @@ jQuery('.custodia tr .insert-btn').live('click', function(){
 	jQuery(this).closest('tr').find('input').val('');
 	jQuery(this).closest('tr').find('select option:first-child').attr("selected", "selected");
 	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
-	jQuery(tr).find('input').prop('disabled', true);
-	tr.find('input[name="acao"]').val('inlcuir');
+	//jQuery(tr).find('input').prop('disabled', true);
+	tr.find('input[name="Acao"]').val('inlcuir');
 	jQuery('.custodias tbody').append(tr);
 	return false;
 });
@@ -74,9 +74,9 @@ jQuery('.custodia tr .insert-btn').live('click', function(){
 jQuery('.custodias tr .remove-btn').live('click', function(){
 	
 	if(jQuery('.custodias tbody tr:visible').length != 1){
-	jQuery(this).closest('tr').find('input[name="acao"]').val('excluir')	
 	jQuery(this).closest('tr').hide();
 	}
+	jQuery(this).closest('tr').find('input[name="Acao"]').val('excluir')	
 	return false;
 
 });
@@ -89,7 +89,8 @@ if(jQuery('#valorNao2').prop('disabled') != true && jQuery('#valorSim2').prop('d
 	var tr = jQuery(this).closest('tr').clone();
 	jQuery(this).find('input').val('');
 	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
-	jQuery(tr).find('input').prop('disabled', true);
+//	jQuery(tr).find('input').prop('disabled', true);
+	tr.find('input[name="Acao"]').val('inlcuir');
 	jQuery('#fundos-table2 tbody').append(tr);
 	jQuery('#fundos-table2').show();
 }
@@ -99,9 +100,10 @@ if(jQuery('#valorNao2').prop('disabled') != true && jQuery('#valorSim2').prop('d
 
 
 jQuery('#fundos-table2 tr .remove-btn').live('click', function(){
+	jQuery(this).closest('tr').find('input[name="Acao"]').val('excluir');
 		if(jQuery('#fundos-table2 tbody tr:visible').length != 1){
-	jQuery(this).closest('tr').hide();
-	}
+			jQuery(this).closest('tr').hide();
+		}
 	return false;
 });
 
@@ -113,6 +115,7 @@ jQuery('.valores tr .insert-btn').live('click', function(){
 	jQuery(this).find('input').val('');
 	jQuery(tr).find('.insert-btn').removeClass('insert-btn').addClass('remove-btn');
 	jQuery(tr).find('input').prop('disabled', true);
+	tr.find('input[name="Acao"]').val('inlcuir');
 	if(jQuery('#valorNao').prop('disabled') != true && jQuery('#valorSim').prop('disabled') != true){
 	jQuery('.valores2 tbody').append(tr);
 	jQuery('.valores2').show();
@@ -124,9 +127,13 @@ jQuery('.valores tr .insert-btn').live('click', function(){
 
 jQuery('.valores2 tr .remove-btn').live('click', function(){
 	
-		if(jQuery('.valores2 tbody tr:visible').length != 1){
-	jQuery(this).closest('tr').hide();
+	if(jQuery('.valores2 tbody tr:visible').length != 0){
+		jQuery('.valores2').hide();
 	}
+	jQuery(this).closest('tr').hide();
+	jQuery(this).closest('tr').find('input[name="Acao"]').val('excluir');
+	
+
 	return false;
 });
 
@@ -199,7 +206,7 @@ jQuery('table.com-hover-input td input').live({
 });
 
 // script que adiciona linha na tabela de nota
-var trNota = '<tr><td>	<select id="" name="">		<option value="1">tipo 1</option>	<option value="2">tipo 2</option>	</select></td><td><select id="" name=""><option value="1">corretota 1</option>	<option value="2">corretora 2</option>	</select></td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td>	<td class="btn-table"><button class="add big-mais">+</button><button class="less big-menos">-</button></td></tr>';
+var trNota = '<tr><td> 	<input type="hidden" name="NotaId"/ value="0"/>	<input type="hidden" name="Acao"/ value=""/> <select id="" name="">		<option value="1">tipo 1</option>	<option value="2">tipo 2</option>	</select></td><td><select id="" name=""><option value="1">corretota 1</option>	<option value="2">corretora 2</option>	</select></td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td><td><input type="text"> </td>	<td class="btn-table"><button class="add big-mais">+</button><button class="less big-menos">-</button></td></tr>';
 
 jQuery('.notaT1 .btn-table .add').live('click', function(){
 	jQuery(this).closest('tr').after(trNota);
@@ -207,6 +214,7 @@ jQuery('.notaT1 .btn-table .add').live('click', function(){
 
 jQuery('.notaT1 .btn-table .less').live('click', function(){
 	jQuery(this).closest('tr').hide();
+	jQuery(this).closest('tr').find('input[name="Acao"]').val('excluir');	
 });
 
 

@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-		jQuery('.tabs ul.links li:eq(1) a').trigger('click');
+		jQuery('.tabs ul.links li:eq(3) a').trigger('click');
 	});	
 </script>
 <div id="main" class="dados-iniciais">
@@ -76,8 +76,8 @@ jQuery(document).ready(function($) {
 				<tbody>
 					<tr>
 						<td>
-							<input type="hidden" name="notaId" value="0"/>
-							<input type="hidden" name="acao" value=""/>
+							<input type="hidden" name="NotaId" value="0"/>
+							<input type="hidden" name="Acao" value=""/>
 							<select name="corretora" id="corretora">
 								<option value="1" selected="selected">n1</option>
 								<option value="2" >n2</option>
@@ -196,7 +196,10 @@ jQuery(document).ready(function($) {
 
 <tbody>
 	<tr>
-		<td><input  style="width:50px;" type="text"/> </td>
+		<td>
+			<input type="hidden" name="NotaId"/ value="0"/>
+			<input type="hidden" name="Acao"/ value=""/>
+			<input  style="width:50px;" type="text"/> </td>
 		<td><input type="text"/> </td>
 		<td><input type="text"/> </td>
 		<td><input  style="width:55px;" type="text"/> </td>
@@ -287,7 +290,10 @@ jQuery(document).ready(function($) {
 		
 		<tbody>
 			<tr>
-				<td><input style="width:75px;" type="text"/> </td>
+				<td>
+					<input type="hidden" name="NotaId"/ value="0"/>
+			<input type="hidden" name="Acao"/ value=""/>
+					<input style="width:75px;" type="text"/> </td>
 				<td><input style="width:75px;" type="text"/> </td>
 				<td class="border-fix"><input style="width:100px;" type="text"/> </td>
 				<td><button class="insert-btn"></button> </td>
@@ -313,7 +319,10 @@ jQuery(document).ready(function($) {
 		
 		<tbody>
 			<tr>
-				<td><input style="width:75px;" type="text"/> </td>
+				<td>
+						<input type="hidden" name="NotaId"/ value="0"/>
+			<input type="hidden" name="Acao"/ value=""/>
+					<input style="width:75px;" type="text"/> </td>
 				<td><input style="width:75px;" type="text"/> </td>
 				<td class="border-fix"><input style="width:100px;" type="text"/> </td>
 				<td><button class="insert-btn"></button> </td>
@@ -339,7 +348,9 @@ jQuery(document).ready(function($) {
 	
 	<tbody>
 		<tr>
-			<td><input style="width:75px;" type="text" /> </td>
+			<td>
+				
+				<input style="width:75px;" type="text" /> </td>
 			<td><input style="width:75px;" type="text"/> </td>
 			<td class="border-fix"><input style="width:100px;" type="text"/> </td>
 			<td><button class="remove-btn"></button> </td>

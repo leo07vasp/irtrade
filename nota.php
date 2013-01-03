@@ -78,6 +78,8 @@
 <tbody>
 	<tr>
 		<td>
+        <input type="hidden" name="NotaId"/ value="0"/>
+            <input type="hidden" name="Acao"/ value=""/>      
 			<select name="" id="">
 				<option value="1">tipo 1</option>
 				<option value="2">tipo 2</option>
@@ -96,7 +98,10 @@
 		<td class="btn-table"><button class="add  big-mais">+</button><button class="less  big-menos ">-</button></td>
 	</tr>
 	<tr>
-		<td><select name="" id="">
+		<td>
+        <input type="hidden" name="NotaId"/ value="0"/>
+            <input type="hidden" name="Acao"/ value=""/>      
+            <select name="" id="">
 				<option value="1">tipo 1</option>
 				<option value="2">tipo 2</option>
 			</select></td>
@@ -112,7 +117,10 @@
 		<td class="btn-table"><button class="add  big-mais">+</button><button class="less  big-menos ">-</button></td>
 	</tr>
 	<tr>
-		<td><select name="" id="">
+		<td>
+            <input type="hidden" name="NotaId"/ value="0"/>
+            <input type="hidden" name="Acao"/ value=""/>
+                  <select name="" id="">
 				<option value="1">tipo 1</option>
 				<option value="2">tipo 2</option>
 			</select></td>
